@@ -12,6 +12,8 @@ repositories {
 val junitVersion by extra("5.+")
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
+    testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
 }
 
 tasks {
